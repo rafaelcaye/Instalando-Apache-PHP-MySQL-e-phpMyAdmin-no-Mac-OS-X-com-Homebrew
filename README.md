@@ -14,12 +14,16 @@
 brew install --cask visual-studio-code
 ```
 
-If you already have Visual Studio Code installed, you can easily create a code symlink with:
+Se você já tiver o Visual Studio Code instalado, poderá criar facilmente um `code` link simbólico com:
 
 ```
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
 ```
+Depois disso será possível usar o Visual Studio Code para editar seus arquivos usando o `code` comando Terminal:
 
+```
+code filename
+```
 
 ### 3) Enable Apache
 ```
