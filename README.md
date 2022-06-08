@@ -1,6 +1,5 @@
 # Instalando Apache, PHP, MySQL e phpMyAdmin no Mac OS X com Homebrew
 
-
 ## Pré-requisito
 
 ### Instale o Homebrew
@@ -23,7 +22,6 @@ Se você já tiver o Visual Studio Code instalado, poderá criar facilmente um `
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
 ```
 Depois disso será possível usar o Visual Studio Code para editar seus arquivos usando o `code filename` no Terminal.
-
 
 _Obs.: O Visual Studio Code é o editor que eu prefiro. Você pode instalar outro editor se preferir.__
 
