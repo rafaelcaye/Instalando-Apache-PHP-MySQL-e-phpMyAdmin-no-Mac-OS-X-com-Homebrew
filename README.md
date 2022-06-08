@@ -1,4 +1,4 @@
-# Install Apache, PHP, MySQL and phpMyAdmin on Mac OS X with Homebrew
+## Install Apache, PHP, MySQL and phpMyAdmin on Mac OS X with Homebrew
 
 
 ### 1) Install Homebrew: 
@@ -12,6 +12,12 @@
 
 ```
 brew install --cask visual-studio-code
+```
+
+If you already have Visual Studio Code installed, you can easily create a code symlink with:
+
+```
+ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
 ```
 
 
