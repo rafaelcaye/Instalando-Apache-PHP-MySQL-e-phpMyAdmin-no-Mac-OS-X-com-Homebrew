@@ -1,16 +1,15 @@
-## Instalando Apache, PHP, MySQL e phpMyAdmin no Mac OS X com Homebrew
+# Instalando Apache, PHP, MySQL e phpMyAdmin no Mac OS X com Homebrew
 
 
+## Pré-requisito
 
-### Instale o Homebrew: 
+### Instale o Homebrew
 
 Abra o Terminal e execute o seguinte código:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-
-
 
 ### Instale o Visual Studio Code
 
@@ -26,8 +25,9 @@ ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /op
 Depois disso será possível usar o Visual Studio Code para editar seus arquivos usando o `code filename` no Terminal.
 
 
+_Obs.: O Visual Studio Code é o editor que eu prefiro. Você pode instalar outro editor se preferir.__
 
-### Habilite o Apache
+### 1) Habilite o Apache
 
 ```
 sudo apachectl start
@@ -37,7 +37,7 @@ Após executar o código acima, abra seu navegador e acesse http://localhost. Se
 
 
 
-### Instale o PHP
+### 1) Instale o PHP
 ```
 brew install php
 ```
