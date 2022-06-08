@@ -16,7 +16,7 @@ Abra o Terminal e execute o seguinte código:
 brew install --cask visual-studio-code
 ```
 
-Se você já tiver o Visual Studio Code instalado, poderá criar facilmente um `code` link simbólico com:
+Alias para editar arquivos pelo Visual Studio Code com 'code filename' via Terminal:
 
 ```
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
