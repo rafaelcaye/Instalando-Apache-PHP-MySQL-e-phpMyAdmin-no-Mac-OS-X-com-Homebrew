@@ -27,7 +27,7 @@ _Obs.: O Visual Studio Code é o editor que eu prefiro. Você pode instalar outr
 
 ----
 
-### 1) Habilite o Apache
+### 1) Enable Apache
 
 ```
 sudo apachectl start
@@ -37,7 +37,7 @@ Após executar o código acima, abra seu navegador e acesse http://localhost. Se
 
 
 
-### 1) Instale o PHP
+### 2) Enable PHP
 ```
 brew install php
 ```
