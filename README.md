@@ -21,11 +21,8 @@ Se você já tiver o Visual Studio Code instalado, poderá criar facilmente um `
 ```
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
 ```
-Depois disso será possível usar o Visual Studio Code para editar seus arquivos usando o `code` comando Terminal:
+Depois disso será possível usar o Visual Studio Code para editar seus arquivos usando o `code filename` no Terminal.
 
-```
-code filename
-```
 
 ### Habilite o Apache
 
