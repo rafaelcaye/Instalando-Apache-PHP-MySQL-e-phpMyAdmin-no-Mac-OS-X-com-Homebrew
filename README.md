@@ -23,7 +23,7 @@ ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /op
 ```
 Depois disso será possível usar o Visual Studio Code para editar seus arquivos usando o `code filename` no Terminal.
 
-_Obs.: O Visual Studio Code é o editor que eu prefiro. Você pode instalar outro editor se preferir.__
+_Obs.: O Visual Studio Code é o editor que eu prefiro. Você pode instalar outro editor se preferir._
 
 ----
 
