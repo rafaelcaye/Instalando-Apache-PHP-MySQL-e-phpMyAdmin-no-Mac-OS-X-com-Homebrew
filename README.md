@@ -48,7 +48,10 @@ sudo apachectl stop
 sudo apachectl restart
 ```
 
-### 2) Install PHP -> `brew install php`
+### 2) Install PHP
+```
+brew install php
+``` 
 
 #### Configure PHP
 
