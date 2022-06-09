@@ -34,10 +34,10 @@ code /etc/apache2/httpd.conf
 
 - Replace `Listen 8080` -> `Listen 80`
 - Edit `ServerName`
-- Edit `DocumentRoot` e `<Directory>`
+- Edit `DocumentRoot` and `<Directory>`
 - Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
 - Set `AllowOverride All` _(AllowOverride FileInfo AuthConfig Limit)_
-- Set `user` e `group`
+- Set `user` and `group`
 
 
 Start/stop/restart Apache commands:
