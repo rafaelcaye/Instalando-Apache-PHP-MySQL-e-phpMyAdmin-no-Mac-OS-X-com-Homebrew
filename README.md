@@ -32,16 +32,25 @@ sudo apachectl start
 
 Após executar o código acima, abra seu navegador e acesse http://localhost. Se exibir **"It Works!"** estará configurado.
 
-##### Configurando o Apache
+##### Configure Apache
 
 ```
 code etc/apache2/httpd.conf
 ```
 
+- Replace `Listen 8080` -> `Listen 80`
+- Replace `ServerName www.example.com:8080` -> `ServerName localhost`
+- Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
+
+Para iniciar/parar o servidor, execute os comandos abaixo no terminal:
+
+```
+sudo apachectl start
+sudo apachectl stop
+sudo apachectl restart
+```
 
 ### 2) Install PHP
-
-Com o comando abaixo será instalada a última versão do PHP.
 
 ```
 brew install php
