@@ -39,7 +39,7 @@ Após executar o código acima, abra seu navegador e acesse http://localhost. Se
 
 ### 2) Install PHP
 
-Com o comando abaixo será instalado a última versão do PHP.
+Com o comando abaixo será instalada a última versão do PHP.
 
 ```
 brew install php
