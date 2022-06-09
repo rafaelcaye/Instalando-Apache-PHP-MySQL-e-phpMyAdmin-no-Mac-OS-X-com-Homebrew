@@ -41,6 +41,7 @@ code /etc/apache2/httpd.conf
 - Replace `Listen 8080` -> `Listen 80`
 - Replace `ServerName www.example.com:8080` -> `ServerName localhost`
 - Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
+- Edit `DocumentRoot "/Library/WebServer/Documents"` e `<Directory "/Library/WebServer/Documents">`
 
 Para iniciar/parar o servidor, execute os comandos abaixo no terminal:
 
