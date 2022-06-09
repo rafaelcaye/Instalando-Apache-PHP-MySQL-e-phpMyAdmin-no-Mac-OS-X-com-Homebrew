@@ -39,7 +39,7 @@ code /etc/apache2/httpd.conf
 ```
 
 - Replace `Listen 8080` -> `Listen 80`
-- Edit `ServerName www.example.com:8080`
+- Edit `ServerName`
 - Edit `DocumentRoot` e `<Directory>`
 - Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
 - Set `AllowOverride All` _(AllowOverride FileInfo AuthConfig Limit)_
