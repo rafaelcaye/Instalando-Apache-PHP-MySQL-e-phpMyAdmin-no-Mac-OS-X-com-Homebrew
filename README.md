@@ -52,7 +52,7 @@ sudo apachectl restart
 
 #### Configure PHP
 
-- Enable PHP in Apache `httpd.conf`: 
+1. Enable PHP in Apache `httpd.conf`: 
 ```
 LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
 
@@ -61,8 +61,6 @@ LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
 </FilesMatch>
 ```
 
-- Include `index.php` -> `DirectoryIndex index.php index.html`
+2. Include `index.php` -> `DirectoryIndex index.php index.html`
 
-`php.ini` and `php-fpm.ini` be found -> `/usr/local/etc/php/8.1/`
-
-Restart PHP: `brew services restart php`
+3. Restart PHP: `brew services restart php`
