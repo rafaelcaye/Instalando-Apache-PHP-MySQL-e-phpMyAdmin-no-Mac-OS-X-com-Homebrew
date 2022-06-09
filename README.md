@@ -16,7 +16,7 @@ Abra o Terminal e execute o seguinte código:
 brew install --cask visual-studio-code
 ```
 
-Configurando o comando `code` para editar arquivos no Visual Studio Code:
+Definindo como padrão o comando `code` para edição de arquivos no Visual Studio Code:
 
 ```
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
