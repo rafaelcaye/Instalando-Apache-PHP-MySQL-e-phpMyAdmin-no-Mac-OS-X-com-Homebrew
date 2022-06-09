@@ -19,7 +19,7 @@ brew install --cask visual-studio-code
 Definindo como padrão o comando `code` para edição de arquivos no Visual Studio Code:
 
 ```
-ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /opt/homebrew/bin/code
+ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/homebrew/bin/code
 ```
 
 ----
@@ -35,7 +35,7 @@ Após executar o código acima, abra seu navegador e acesse http://localhost. Se
 ##### Configure Apache
 
 ```
-code etc/apache2/httpd.conf
+code /etc/apache2/httpd.conf
 ```
 
 - Replace `Listen 8080` -> `Listen 80`
