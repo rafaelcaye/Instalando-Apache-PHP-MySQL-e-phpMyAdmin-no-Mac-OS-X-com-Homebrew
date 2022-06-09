@@ -8,9 +8,10 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Install Visual Studio Code -> `brew install --cask visual-studio-code`
+### Install Visual Studio Code
+```brew install --cask visual-studio-code```
 
-Definindo como padrão o comando `code` para edição de arquivos no Visual Studio Code:
+Sets `code` as the default command for editing files in Visual Studio Code:
 
 ```
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/homebrew/bin/code
