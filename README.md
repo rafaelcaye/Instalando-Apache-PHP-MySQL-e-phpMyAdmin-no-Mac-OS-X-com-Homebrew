@@ -39,9 +39,9 @@ code /etc/apache2/httpd.conf
 ```
 
 - Replace `Listen 8080` -> `Listen 80`
-- Replace `ServerName www.example.com:8080` -> `ServerName localhost`
-- Edit `DocumentRoot "/Library/WebServer/Documents"` e `<Directory "/Library/WebServer/Documents">`
-- Replace AllowOverride FileInfo AuthConfig Limit `AllowOverride none` -> `AllowOverride All`
+- Edit `ServerName www.example.com:8080`
+- Edit `DocumentRoot` e `<Directory>`
+- Set `AllowOverride All` (AllowOverride FileInfo AuthConfig Limit `AllowOverride none`)
 - Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
 - Set `user` e `group`
 
