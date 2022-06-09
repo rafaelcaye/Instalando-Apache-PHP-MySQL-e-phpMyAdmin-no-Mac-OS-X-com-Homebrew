@@ -58,3 +58,23 @@ sudo apachectl restart
 ```
 brew install php
 ```
+
+Enable PHP in Apache `httpd.conf` and restart Apache:
+    ```
+    LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
+```
+```
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+```
+
+Include `index.php`:
+    ```
+    DirectoryIndex index.php index.html
+    ```
+
+The php.ini and php-fpm.ini file can be found in:
+    /usr/local/etc/php/8.1/
+
+Restart PHP: `brew services restart php`
