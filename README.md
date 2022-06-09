@@ -68,3 +68,5 @@ LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
 2. Include `index.php` -> `DirectoryIndex index.php index.html`
 
 3. Restart PHP: `brew services restart php`
+
+codesign --sign "John Doe" --force --keychain ~/Library/Keychains/login.keychain-db /usr/local/opt/php/lib/httpd/modules/libphp.so
