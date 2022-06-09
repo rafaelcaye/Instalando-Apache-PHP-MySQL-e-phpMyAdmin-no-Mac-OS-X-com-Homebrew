@@ -26,7 +26,7 @@ sudo apachectl start
 ```
 Access in your browser: http://localhost. If show **"It Works!"**, all ok!
 
-##### Configure Apache
+#### Configure Apache
 
 ```
 code /etc/apache2/httpd.conf
@@ -38,6 +38,7 @@ code /etc/apache2/httpd.conf
 - Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
 - Set `AllowOverride All` _(AllowOverride FileInfo AuthConfig Limit)_
 - Set `user` e `group`
+
 
 Start/stop/restart Apache commands:
 
@@ -60,8 +61,8 @@ LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
 </FilesMatch>
 ```
 
-- Include `index.php` -> `DirectoryIndex *index.php* index.html`
+- Include `index.php` -> `DirectoryIndex index.php index.html`
 
-The php.ini and php-fpm.ini file can be found in: `/usr/local/etc/php/8.1/`
+`php.ini` and `php-fpm.ini` be found -> `/usr/local/etc/php/8.1/`
 
 Restart PHP: `brew services restart php`
