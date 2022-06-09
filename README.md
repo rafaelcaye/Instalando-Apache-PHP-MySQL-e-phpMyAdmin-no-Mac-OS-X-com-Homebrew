@@ -38,16 +38,17 @@ code /etc/apache2/httpd.conf
 - Enable `LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
 - Set `AllowOverride All` _(AllowOverride FileInfo AuthConfig Limit)_
 - Set `user` e `group`
+
 Para iniciar/parar o servidor, execute os comandos abaixo no terminal:
+
 ```
 sudo apachectl start
 sudo apachectl stop
 sudo apachectl restart
 ```
-### 2) Install PHP
-```
-brew install php
-```
+
+### 2) Install PHP `brew install php`
+
 #### Configure PHP
 
 - Enable PHP in Apache `httpd.conf` and restart Apache: `LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so`
