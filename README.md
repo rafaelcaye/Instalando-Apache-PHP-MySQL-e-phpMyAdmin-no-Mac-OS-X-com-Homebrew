@@ -46,6 +46,7 @@ Start/stop/restart Apache commands:
 sudo apachectl start
 sudo apachectl stop
 sudo apachectl restart
+apachectl configtest
 ```
 
 ### 2) Install PHP
