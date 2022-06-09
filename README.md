@@ -30,8 +30,13 @@ ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /op
 sudo apachectl start
 ```
 
-Após executar o código acima, abra seu navegador e acesse http://localhost. Se for exibido **"It Works!"** estará configurado.
+Após executar o código acima, abra seu navegador e acesse http://localhost. Se exibir **"It Works!"** estará configurado.
 
+##### Configurando o Apache
+
+```
+code etc/apache2/httpd.conf
+```
 
 
 ### 2) Install PHP
