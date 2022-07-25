@@ -66,3 +66,33 @@ LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
 2. Include `index.php` -> `DirectoryIndex index.php index.html`
 
 3. Restart PHP: `brew services restart php`
+
+### 3) Install MySQL
+```
+brew install mysql
+``` 
+
+Restart MySQL: `brew services restart mysql`
+
+### 4) Install phpMyAdmin
+
+```
+brew install phpmyadmin
+```
+
+Enable phpMyAdmin in Apache to open with `http://localhost/phpmyadmin`
+```
+    Alias /phpmyadmin /opt/homebrew/share/phpmyadmin
+    
+    <Directory /opt/homebrew/share/phpmyadmin/>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        <IfModule mod_authz_core.c>
+            Require all granted
+        </IfModule>
+        <IfModule !mod_authz_core.c>
+            Order allow,deny
+            Allow from all
+        </IfModule>
+    </Directory>
+```
