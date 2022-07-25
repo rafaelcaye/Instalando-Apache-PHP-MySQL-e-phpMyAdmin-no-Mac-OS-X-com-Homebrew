@@ -96,5 +96,7 @@ Alias /phpmyadmin /usr/local/share/phpmyadmin
     </IfModule>
 </Directory>
 ```
-
-Enable `AllowNoPassword`: `$cfg['Servers'][$i]['AllowNoPassword'] = true`
+Edit file `code /usr/local/share/phpmyadmin/config.inc.php` and enable `AllowNoPassword`: 
+```
+$cfg['Servers'][$i]['AllowNoPassword'] = true
+```
