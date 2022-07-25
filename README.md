@@ -82,17 +82,17 @@ brew install phpmyadmin
 
 Enable phpMyAdmin in Apache to open with `http://localhost/phpmyadmin`
 ```
-    Alias /phpmyadmin /usr/local/share/phpmyadmin
+Alias /phpmyadmin /usr/local/share/phpmyadmin
     
-    <Directory /usr/local/share/phpmyadmin>
-        Options Indexes FollowSymLinks MultiViews
-        AllowOverride All
-        <IfModule mod_authz_core.c>
-            Require all granted
-        </IfModule>
-        <IfModule !mod_authz_core.c>
-            Order allow,deny
-            Allow from all
-        </IfModule>
-    </Directory>
+<Directory /usr/local/share/phpmyadmin>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    <IfModule mod_authz_core.c>
+        Require all granted
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Allow from all
+    </IfModule>
+</Directory>
 ```
