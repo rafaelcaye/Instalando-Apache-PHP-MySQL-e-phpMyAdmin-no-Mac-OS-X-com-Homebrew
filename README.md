@@ -20,16 +20,16 @@ Sets `code` as the default command for editing files in Visual Studio Code:
 ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/homebrew/bin/code
 ```
 ----
-### 1) Enable Apache
+### 1) Install Apache
 ```
-sudo apachectl start
+brew install httpd
 ```
 Access in your browser: http://localhost. If show **"It Works!"**, all ok!
 
 #### Configure Apache
 
 ```
-code /etc/apache2/httpd.conf
+code /usr/local/etc/httpd/httpd.conf
 ```
 
 - Replace `Listen 8080` -> `Listen 80`
@@ -39,14 +39,12 @@ code /etc/apache2/httpd.conf
 - Set `AllowOverride All` _(AllowOverride FileInfo AuthConfig Limit)_
 - Set `user` and `group`
 
-
 Start/stop/restart Apache commands:
 
 ```
-sudo apachectl start
-sudo apachectl stop
-sudo apachectl restart
-apachectl configtest
+brew services start httpd
+brew services stop httpd
+brew services restart httpd
 ```
 
 ### 2) Install PHP
@@ -68,5 +66,3 @@ LoadModule php_module /usr/local/opt/php/lib/httpd/modules/libphp.so
 2. Include `index.php` -> `DirectoryIndex index.php index.html`
 
 3. Restart PHP: `brew services restart php`
-
-codesign --sign "John Doe" --force --keychain ~/Library/Keychains/login.keychain-db /usr/local/opt/php/lib/httpd/modules/libphp.so
